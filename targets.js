@@ -25,9 +25,10 @@ function functionWithReturn()
 }
 
 async function asyncFunction() {
-    console.log('Hello');
-    await sleep(2000);
-    console.log('World');
+    for(let x = 0; x < 10; x++) {
+        console.log(x);
+        await sleep(100);
+    }
 }
 
 async function asyncFunctionWithReturn() {
