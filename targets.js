@@ -23,3 +23,18 @@ function functionWithReturn()
 {
     return 777;
 }
+
+async function asyncFunction() {
+    console.log('Hello');
+    await sleep(2000);
+    console.log('World');
+}
+
+async function asyncFunctionWithReturn() {
+    await sleep(2000);
+    return "async return";
+}
+
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
